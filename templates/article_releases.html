@@ -1,0 +1,271 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load i18n%}
+{% block page %}
+
+
+<div id="d-content">
+
+    <section class="d-section-0 d-dark d-animbox" style="padding-top: 30px" id="d-section-0">
+        <div class="d-grid d-animbox">
+
+            <div class="container swiper-container">
+                <div class="swiper-wrapper" style="position:relative; z-index:334;">
+                    {% for article in articles %}
+                    <div class="swiper-slide">
+                        <article class="d-animate d-fade">
+                            <div style="border: 1px solid #fff; margin-bottom: 2em;" class="d-person-img">
+                                <img class=" lazyloaded" width="100%" alt="{{article.title}}"
+                                     src="{{ article.image.url }}">
+                            </div>
+                            <div class="d-person-txt" style="padding: 0 5px">
+                                <a href="{% url 'article' article.pk %}"><p style="margin-bottom: 0.5em;"
+                                                                            class="d-l d-white d-ttu">
+                                    {{article.title}}
+                                </p></a>
+                                {{article.text|truncatechars:200}}
+                            </div>
+                        </article>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div style="z-index: 335" class="swiper-button-next swiper-button-white"></div>
+                <div style="z-index: 335" class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        </div>
+        <div class="mask1"></div>
+        <div class="d-moon d-moon-a2q d-hide-pc"><b></b><i></i>
+            <div></div>
+        </div>
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-4 d-col-xs-12">
+                    <div class="d-circle d-circle-0 d-ttu d-animate d-fade">
+                            <span class="d-crcl-sm-0"><b class="d-animate d-fade d-delay-2"><i
+                                    class="d-hover"></i></b></span>
+                        <span class="d-crcl-sm-1"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover"></i></b></span>
+                        <span class="d-crcl-sm-2"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover"></i></b></span>
+                        <span class="d-crcl-sm-3"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover"></i></b></span>
+                        <div class="d-crcl-sm-4"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover"></i></b></div>
+                    </div>
+                    <div class="d-circle d-circle-1 d-animate d-fade"></div>
+                </div>
+            </div>
+
+    </section>
+    <section class="d-section-2 d-dark d-animbox" id="d-section-2">
+        <div class="d-moon d-moon-q2a d-hide-pc"><b></b><i></i>
+            <div></div>
+        </div>
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-9 d-hide-xs"></div>
+                <div class="d-col d-col-3 d-col-xs-12">
+                    <div class="d-circle d-circle-0 d-animate d-fade">
+                        <div class="d-crcl-lg-3 d-pink d-s d-ttu d-animate d-fade d-delay-2 test"></div>
+                    </div>
+                    <div class="d-circle d-circle-1 d-l d-ttu d-animate d-fade">
+                        <span class="d-crcl-lg-0"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover"></i></b></span>
+                        <span class="d-crcl-lg-1"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover"></i></b></span>
+                        <span class="d-crcl-lg-2"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover"></i></b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-stars d-stars-2"></div>
+    </section>
+
+    <section class="d-section-4 d-dark d-animbox" id="d-section-4" style="display: none">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-12">
+                    <div class="d-circle d-circle-bg d-circle-0 d-hb"></div>
+                    <div class="d-circle d-circle-bg d-circle-1 d-hb"></div>
+                    <div class="d-moon d-moon-aq d-hide-pc"><b></b><i></i>
+                        <div></div>
+                    </div>
+                    <div class="h2 d-ttu d-animate d-fade">максимально эффективное<br/>управление компетенциями
+                    </div>
+                    <div class="h1 d-ttu d-white d-rise d-animate">проектный цикл<br/><span
+                            class="d-blue d-ha d-arr d-arr-pink">aic</span><span
+                            class="d-pink d-hb d-arr d-arr-blue">qsoft</span></div>
+                    <div class='d-swipe-note d-hide-pc d-cb d-xl'>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="37px"
+                             viewBox="0 0 45.002 30" enable-background="new 0 0 45.002 30" xml:space="preserve"><switch>
+                                    <g i:extraneous="self">
+                                        <g>
+                                            <polygon
+                                                    points="4,20 6.562,20 3.361,16 10,16 10,14 3.361,14 6.562,10 4,10 0,15.001"/>
+                                            <g>
+                                                <path
+                                                        d="M16.002,16c-0.553,0-1-0.448-1-1c0-8.271,6.729-15,15-15s15,6.729,15,14.999c0,0.552-0.449,1-1,1c-0.553,0-1-0.448-1-1 C43.002,7.831,37.17,2,30.002,2s-13,5.831-13,13C17.002,15.552,16.553,16,16.002,16"/>
+                                                <path
+                                                        d="M29.982,19.989c-6.018,0-5.127-7.311-5.127-7.311s1.027-2.315,5.127-2.315c4.102,0,5.17,2.315,5.17,2.315 S35.998,19.989,29.982,19.989 M30.002,8c-6.285,0-8.115,5.679-8.115,19.004v0.6C24.229,29.114,27.008,30,30.002,30 c2.992,0,5.773-0.887,8.113-2.396v-0.6C38.115,13.679,36.285,8,30.002,8"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </switch></svg>
+                        <div>Смахните пальцем влево, чтобы узнать больше</div>
+                    </div>
+                    <div class="d-scroll-wrap">
+                        <div class="d-scroll">
+                            <div class="d-cycle d-ttu d-xs">
+                                <div class="d-cycle-i d-cycle-a d-animate d-rise-l d-delay-1">
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">информационная<br/>архитектура</i></span>
+                                    <span class="d-hb d-animate d-fade d-delay-2"><i
+                                            class="d-hover">интерактивные<br/>прототипы</i></span>
+                                    <span class="d-hb d-animate d-fade d-delay-2"><i
+                                            class="d-hover">контент-стратегия</i></span>
+                                    <span class="d-hb d-animate d-fade d-delay-2"><i
+                                            class="d-hover">дизайн</i></span>
+                                    <span class="d-hb d-animate d-fade d-delay-2"><i
+                                            class="d-hover">тестирование<br/>и аналитика</i></span>
+                                    <div class="d-blue d-s d-ttu d-animate d-fade d-delay-2">aic &gt;&gt;</div>
+                                </div>
+                                <div class="d-cycle-m d-animate d-fade d-delay-3">
+                                    <div class="d-ha d-hb"></div>
+                                    <div class="d-ha d-hb"></div>
+                                    <div class="d-ha d-hb"></div>
+                                    <div class="d-ha d-hb"></div>
+                                </div>
+                                <div class="d-cycle-i d-cycle-q d-animate d-rise-r d-delay-1">
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">техническая<br/>архитектура</i></span>
+                                    <span class="d-hb d-animate d-fade d-delay-2"><i
+                                            class="d-hover">функциональная<br/>спецификация</i></span>
+                                    <span class="d-hb d-animate d-fade d-delay-2"><i
+                                            class="d-hover">front-end</i></span>
+                                    <span class="d-hb d-animate d-fade d-delay-2"><i
+                                            class="d-hover">back-end</i></span>
+                                    <span class="d-hb d-animate d-fade d-delay-2"><i class="d-hover">нi-load<br/>тестирование</i></span>
+                                    <span class="d-hb d-animate d-fade d-delay-2"><i
+                                            class="d-hover">техническая<br/>поддержка</i></span>
+                                    <div class="d-pink d-s d-ttu d-animate d-fade d-delay-2">qsoft &gt;&gt;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-stars d-stars-3"></div>
+    </section>
+    <section class="d-section-6 d-dark d-animbox" id="d-section-6">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-moon d-moon-a d-hide-pc"><b></b><i></i>
+                    <div></div>
+                </div>
+                <div class="d-col d-col-12">
+                    <nav class="d-nav-charts d-nav-tabs d-ib h3 d-ttu d-animate d-fade d-delay-1">
+                        <ul>
+                            <li class="d-current">aic</li>
+                            <li>qsoft</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="d-col d-col-4 d-col-xs-12">
+                    <div class="d-counter-a d-animate d-fadein">
+                        <div class="d-count d-font d-counted2" data-count="{{number1.title}}">0</div>
+                        <div class="d-count d-fl d-font d-counted2" data-count="{{number2.title}}">0</div>
+                        <div class="d-white d-xl">{{text1.title}}</div>
+                    </div>
+                    <div class="d-counter-q d-animate2 d-fadeout">
+                        <div class="d-count d-font d-counted2" data-count="{{number3.title}}">0</div>
+                        <div class="d-count d-fl d-font d-counted2" data-count="{{number4.title}}">0</div>
+                        <div class="d-white d-xl">{{text2.title}}</div>
+                    </div>
+                </div>
+                <div class="d-ccharts" id="d-ccharts">
+                    <div class="d-cchart d-cchart-a d-animate">
+                        <nav class="d-nav-employees d-tar d-ttu d-xs d-animate d-fade d-delay-1">
+                            <ul>
+                                <li><i class="d-hover">{{ ninethline.title }}</i></li>
+                                <li><i class="d-hover">{{ tenthline.title }}</i></li>
+                                <li><i class="d-hover">{{ eleventhline.title }}</i></li>
+                                <li><i class="d-hover">{{ twelvethine.title }}</i></li>
+                                <li><i class="d-hover">{{ thirteenthline.title }}</i></li>
+                            </ul>
+                        </nav>
+                        <div class="d-cchart-i d-cchart-i-0" id="d-cchart-a-0"></div>
+                        <div class="d-cchart-i d-cchart-i-1" id="d-cchart-a-1"></div>
+                        <div class="d-cchart-i d-cchart-i-2" id="d-cchart-a-2"></div>
+                        <div class="d-cchart-i d-cchart-i-3" id="d-cchart-a-3"></div>
+                        <div class="d-cchart-i d-cchart-i-4" id="d-cchart-a-4"></div>
+                        <div class="d-cchart-i d-cchart-i-4" id="d-cchart-a-4"></div>
+                        <div class="d-cchart-i d-cchart-i-0 d-cchart-i-o" id="d-cchart-a-5"></div>
+                        <div class="d-cchart-i d-cchart-i-1 d-cchart-i-o" id="d-cchart-a-6"></div>
+                        <div class="d-cchart-i d-cchart-i-2 d-cchart-i-o" id="d-cchart-a-7"></div>
+                        <div class="d-cchart-i d-cchart-i-3 d-cchart-i-o" id="d-cchart-a-8"></div>
+                        <div class="d-cchart-i d-cchart-i-4 d-cchart-i-o" id="d-cchart-a-9"></div>
+                    </div>
+                    <div class="d-cchart d-cchart-q d-animate">
+                        <nav class="d-nav-employees d-tar d-ttu d-xs d-animate2 d-fade d-delay-1">
+                            <ul>
+                                <li><i class="d-hover">{{ fourteenthline.title }}</i></li>
+                                <li><i class="d-hover">{{ fifthteenthline.title }}</i></li>
+                                <li><i class="d-hover">{{ sixthteenthline.title }}</i></li>
+                                <li><i class="d-hover">{{ seventeenthline.title }}</i></li>
+                                <li><i class="d-hover">{{ eighteenthline.title }}</i></li>
+                            </ul>
+                        </nav>
+                        <div class="d-cchart-i d-cchart-i-0" id="d-cchart-q-0"></div>
+                        <div class="d-cchart-i d-cchart-i-1" id="d-cchart-q-1"></div>
+                        <div class="d-cchart-i d-cchart-i-2" id="d-cchart-q-2"></div>
+                        <div class="d-cchart-i d-cchart-i-3" id="d-cchart-q-3"></div>
+                        <div class="d-cchart-i d-cchart-i-4" id="d-cchart-q-4"></div>
+                        <div class="d-cchart-i d-cchart-i-0 d-cchart-i-o" id="d-cchart-q-5"></div>
+                        <div class="d-cchart-i d-cchart-i-1 d-cchart-i-o" id="d-cchart-q-6"></div>
+                        <div class="d-cchart-i d-cchart-i-2 d-cchart-i-o" id="d-cchart-q-7"></div>
+                        <div class="d-cchart-i d-cchart-i-3 d-cchart-i-o" id="d-cchart-q-8"></div>
+                        <div class="d-cchart-i d-cchart-i-4 d-cchart-i-o" id="d-cchart-q-9"></div>
+                    </div>
+                </div><!-- /d-ccharts -->
+            </div>
+        </div>
+    </section>
+
+    <section class="d-section-7 d-animbox" id="d-section-7">
+        <div class="d-grid">
+            <div class="container swiper-container">
+                <div class="swiper-wrapper" style="position:relative; z-index:334;">
+                    {% for article in articles_archived %}
+                    <div class="swiper-slide">
+                        <article class="d-animate d-fade">
+                            <div style="border: 1px solid #fff; margin-bottom: 2em;" class="d-person-img">
+                                <img class=" lazyloaded" width="100%" alt="{{article.title}}"
+                                     src="{{ article.image.url }}">
+                            </div>
+                            <div class="d-person-txt" style="padding: 0 5px">
+                                <a href="{% url 'article_archived' article.pk %}"><p style="margin-bottom: 0.5em;"
+                                                                                     class="d-l d-white d-ttu">
+                                    {{article.title}}
+                                </p></a>
+                                {{article.text|truncatechars:200}}
+                            </div>
+                        </article>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div style="z-index: 335;top: 40%;" class="swiper-button-next swiper-button-white"></div>
+                <div style="z-index: 335;top: 40%;" class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        </div>
+        <div class="d-bgd d-bgd-5"></div>
+        <div class="d-stars d-stars-5"></div>
+    </section>
+
+
+</div><!-- /#d-content -->
+
+</div><!-- /#d-wrap -->
+{% endblock %}

@@ -1,0 +1,602 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load i18n%}
+{% block page %}
+<header id="d-header">
+    <div class="d-moon d-moon-0 d-hide-pc"></div>
+    <div class="d-grid d-animbox">
+
+        <img src="{% static 'img/logo.png' %}" class="d-h-logo" width="277" height="72" alt="aic + qsoft alliance"
+             title="aic + qsoft alliance"/>
+        <div class="d-slogan h1 d-ttu d-white d-animate d-rise">{{ tagline.title }}</div>
+        <div class="d-swipe-note d-hide-pc d-cb">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                 y="0px" width="55px" height="37px" viewBox="0 0 45.002 30" enable-background="new 0 0 45.002 30"
+                 xml:space="preserve"><switch>
+                        <g i:extraneous="self">
+                            <g>
+                                <polygon
+                                        points="4,20 6.562,20 3.361,16 10,16 10,14 3.361,14 6.562,10 4,10 0,15.001"></polygon>
+                                <g>
+                                    <path d="M16.002,16c-0.553,0-1-0.448-1-1c0-8.271,6.729-15,15-15s15,6.729,15,14.999c0,0.552-0.449,1-1,1c-0.553,0-1-0.448-1-1 C43.002,7.831,37.17,2,30.002,2s-13,5.831-13,13C17.002,15.552,16.553,16,16.002,16"></path>
+                                    <path d="M29.982,19.989c-6.018,0-5.127-7.311-5.127-7.311s1.027-2.315,5.127-2.315c4.102,0,5.17,2.315,5.17,2.315 S35.998,19.989,29.982,19.989 M30.002,8c-6.285,0-8.115,5.679-8.115,19.004v0.6C24.229,29.114,27.008,30,30.002,30 c2.992,0,5.773-0.887,8.113-2.396v-0.6C38.115,13.679,36.285,8,30.002,8"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </switch></svg>
+        </div>
+    </div>
+    <div class="d-bgd d-bgd-0"></div>
+    <div class="d-bgd d-bgd-1">
+        <div class="d-bgd-inv d-bgd-1-i d-px-box-m-2"></div>
+    </div>
+    <div class="d-stars d-stars-0"></div>
+    <div class="d-stars d-stars-1"></div>
+</header>
+
+<div id="d-content">
+
+    <section style="display:none" class="d-section-0 d-dark d-animbox" id="d-section-0">
+        <div class="mask1"></div>
+        <div class="d-moon d-moon-a2q d-hide-pc"><b></b><i></i>
+            <div></div>
+        </div>
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-4 d-col-xs-12">
+                    <div class="h2 d-ttu d-animate d-fade">{{ firstline.title }}
+                    </div>
+                    <div class="d-circle d-circle-0 d-ttu d-animate d-fade">
+                            <span class="d-crcl-sm-0"><b class="d-animate d-fade d-delay-2"><i
+                                    class="d-hover">{% trans 'сотрудничество' %}</i></b></span>
+                        <span class="d-crcl-sm-1"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover">{% trans 'заказы статей' %}</i></b></span>
+                        <span class="d-crcl-sm-2"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover">{% trans 'заявки' %}</i></b></span>
+                        <span class="d-crcl-sm-3"><b class="d-animate d-fade d-delay-2"><i
+                                class="d-hover">{% trans 'специальности' %}</i></b></span>
+                    </div>
+                    <div class="d-circle d-circle-1 d-animate d-fade"></div>
+                </div>
+            </div>
+
+    </section>
+
+    <section style="display:none;" class="d-section-1 d-animbox" id="d-section-1">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-4 d-col-xs-12">
+                    <div class="h1 d-ttu d-white d-animate d-rise"></div>
+                    <div class="d-section-descr d-dark d-xl d-animate d-fade">{% trans 'Лидер большинства профессиональных рейтингов СМИ Кыргызстана' %}<br/>
+                    </div>
+                    <nav class="d-nav-view d-blue h3 d-ttu d-animate d-fade">
+                        <ul>
+                            <li><a href=""
+                                   onclick="trackOutboundLink('http://www.aic.ru/showreel/'); return false;"
+                                   target="_blank" class="d-hover"><i class="fa fa-external-link d-hover"></i>{% trans 'Подробнее' %}</a>
+                            </li>
+                            <li><a href="http://www.aic.ru/work/site/"
+                                   onclick="trackOutboundLink('http://www.aic.ru/work/site/'); return false;"
+                                   target="_blank" class="d-hover"><i
+                                    class="fa fa-external-link d-hover"></i>{% trans 'Академия' %}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="d-col d-col-8 d-col-xs-12 d-white d-xl">
+                    <div class='d-swipe-note d-hide-pc d-cb'>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="37px"
+                             viewBox="0 0 45.002 30" enable-background="new 0 0 45.002 30" xml:space="preserve"><switch>
+                                    <g i:extraneous="self">
+                                        <g>
+                                            <polygon
+                                                    points="4,20 6.562,20 3.361,16 10,16 10,14 3.361,14 6.562,10 4,10 0,15.001"/>
+                                            <g>
+                                                <path
+                                                        d="M16.002,16c-0.553,0-1-0.448-1-1c0-8.271,6.729-15,15-15s15,6.729,15,14.999c0,0.552-0.449,1-1,1c-0.553,0-1-0.448-1-1 C43.002,7.831,37.17,2,30.002,2s-13,5.831-13,13C17.002,15.552,16.553,16,16.002,16"/>
+                                                <path
+                                                        d="M29.982,19.989c-6.018,0-5.127-7.311-5.127-7.311s1.027-2.315,5.127-2.315c4.102,0,5.17,2.315,5.17,2.315 S35.998,19.989,29.982,19.989 M30.002,8c-6.285,0-8.115,5.679-8.115,19.004v0.6C24.229,29.114,27.008,30,30.002,30 c2.992,0,5.773-0.887,8.113-2.396v-0.6C38.115,13.679,36.285,8,30.002,8"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </switch></svg>
+                    </div>
+                    <div class="d-feats-wrap">
+                        <div class="d-feats d-cb d-animate d-fade">
+                            <article>
+                                <div class="d-count d-blue d-ha d-font d-counted" data-count="{{statistic_1.statistic}}">0</div>
+                                <div class="d-count-descr">{{statistic_1.title}}</div>
+                                <div class="d-feat-pos d-feat-pos-blue d-ha d-hb">
+                                    <div class="d-ha d-font"><span class="d-pr d-ha d-hb d-counted"
+                                                                   data-count="{{statistic_1.lower}}">0</span></div>
+                                </div>
+                                <div class="d-feat-pos-descr">{{statistic_1.comments}}
+                                </div>
+                            </article>
+                            <article>
+                                <div class="d-count d-blue d-font d-counted" data-count="{{statistic_2.statistic}}">0</div>
+                                <div class="d-count-descr">{{statistic_2.title}}</div>
+                                <div class="d-feat-pos d-feat-pos-blue d-ha d-hb">
+                                    <div class="d-ha d-font"><span class="d-pr d-ha d-hb d-counted"
+                                                                   data-count="{{statistic_2.lower}}">0</span></div>
+                                </div>
+                                <div class="d-feat-pos-descr">{{statistic_2.comments}}
+                                </div>
+                            </article>
+                            <article>
+                                <div class="d-count d-blue d-font d-counted" data-count="{{statistic_3.statistic}}">0</div>
+                                <div class="d-count-descr">{{statistic_3.title}}</div>
+                                <div class="d-feat-pos d-feat-pos-pink d-ha d-hb">
+                                    <div class="d-ha d-font"><span class="d-pr d-ha d-hb d-counted"
+                                                                   data-count="{{statistic_3.lower}}">0</span></div>
+                                </div>
+                                <div class="d-feat-pos-descr">{{statistic_3.comments}}
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-bgd d-bgd-inv d-bgd-2 d-hb"></div>
+    </section>
+
+    <section class="d-section-2 d-dark d-animbox" id="d-section-2">
+        <div class="d-moon d-moon-q2a d-hide-pc"><b></b><i></i>
+            <div></div>
+        </div>
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-9 d-hide-xs"></div>
+                <div class="d-col d-col-3 d-col-xs-12">
+                    <div class="h2 d-ttu d-fade d-animate">{% trans 'гарантия качество статей поддержка и развитие' %}
+                    </div>
+                    <div class="d-circle d-circle-0 d-animate d-fade">
+                        <div class="d-crcl-lg-3 d-pink d-s d-ttu d-animate d-fade d-delay-2 test"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-stars d-stars-2"></div>
+    </section>
+
+    <section class="d-section-3 d-animbox" id="d-section-3" style="display: none">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-4 d-col-xs-12">
+                    <div class="h1 d-ttu d-white d-rise d-animate">QSOFT</div>
+                    <div class="d-section-descr d-dark d-xl d-fade d-animate">{% trans 'Лидер в&nbsp;разработке интегрированных и высоконагруженных интернет-решений' %}
+                    </div>
+                    <nav class="d-nav-view d-pink h3 d-ttu d-animate d-fade">
+                        <ul>
+                            <li><a href="../qsoft.ru/presentation/Presentation_full.html"
+                                   onclick="trackOutboundLink('../qsoft.ru/presentation/Presentation_full.html'); return false;"
+                                   target="_blank" class="d-hover"><i class="fa fa-external-link d-hover"></i>{% trans 'презентация' %}</a>
+                            </li>
+                            <li><a href="https://qsoft.ru/project/"
+                                   onclick="trackOutboundLink('https://qsoft.ru/project/'); return false;"
+                                   target="_blank" class="d-hover"><i class="fa fa-external-link d-hover"></i>{% trans 'портфолио' %}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="d-col d-col-8 d-col-xs-12 d-white d-xl">
+                    <div class='d-swipe-note d-hide-pc d-cb'>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="37px"
+                             viewBox="0 0 45.002 30" enable-background="new 0 0 45.002 30" xml:space="preserve"><switch>
+                                    <g i:extraneous="self">
+                                        <g>
+                                            <polygon
+                                                    points="4,20 6.562,20 3.361,16 10,16 10,14 3.361,14 6.562,10 4,10 0,15.001"/>
+                                            <g>
+                                                <path
+                                                        d="M16.002,16c-0.553,0-1-0.448-1-1c0-8.271,6.729-15,15-15s15,6.729,15,14.999c0,0.552-0.449,1-1,1c-0.553,0-1-0.448-1-1 C43.002,7.831,37.17,2,30.002,2s-13,5.831-13,13C17.002,15.552,16.553,16,16.002,16"/>
+                                                <path
+                                                        d="M29.982,19.989c-6.018,0-5.127-7.311-5.127-7.311s1.027-2.315,5.127-2.315c4.102,0,5.17,2.315,5.17,2.315 S35.998,19.989,29.982,19.989 M30.002,8c-6.285,0-8.115,5.679-8.115,19.004v0.6C24.229,29.114,27.008,30,30.002,30 c2.992,0,5.773-0.887,8.113-2.396v-0.6C38.115,13.679,36.285,8,30.002,8"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </switch></svg>
+                    </div>
+                    <div class="d-feats-wrap">
+                        <div class="d-feats d-cb d-animate d-fade">
+                            <article>
+                                <div class="d-count d-pink d-font d-counted" data-count="80">0</div>
+                                <div class="d-count-descr">{% trans 'сотрудников' %}</div>
+                                <div class="d-feat-pos d-feat-pos-pink d-ha d-hb">
+                                    <div class="d-ha d-font"><span class="d-pr d-ha d-hb d-counted"
+                                                                   data-count="1">0</span></div>
+                                </div>
+                                <div class="d-feat-pos-descr">{% trans 'Лучшее в&nbsp;Кыргызстане портфолио крупных статей' %}
+                                </div>
+                            </article>
+                            <article>
+                                <div class="d-count d-pink d-font d-counted" data-count="10">0</div>
+                                <div class="d-count-descr">{% trans 'лет опыта' %}</div>
+                                <div class="d-feat-pos d-feat-pos-pink d-ha d-hb">
+                                    <div class="d-ha d-font"><span class="d-pr d-ha d-hb d-counted"
+                                                                   data-count="2">0</span></div>
+                                </div>
+                                <div class="d-feat-pos-descr">{% trans 'Один из&nbsp;опытнейших в&nbsp;Кыргызстане разработчиков корпоративных порталов' %}
+                                </div>
+                            </article>
+                            <article>
+                                <div class="d-count d-pink d-ha d-font d-counted" data-count="100">0</div>
+                                <div class="d-count-descr">{% trans 'реализованных проектов' %}</div>
+                                <div class="d-feat-pos d-feat-pos-pink d-ha d-hb">
+                                    <div class="d-ha d-font"><span class="d-pr d-ha d-hb d-counted"
+                                                                   data-count="3">0</span></div>
+                                </div>
+                                <div class="d-feat-pos-descr">{% trans 'Входит в&nbsp;Top-10 журналов Кыргызстана' %}
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-bgd d-bgd-3 d-hb"></div>
+    </section>
+
+    <section class="d-section-4 d-dark d-animbox" id="d-section-4">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-12">
+                    <div class="d-circle d-circle-bg d-circle-0 d-hb"></div>
+                    <div class="d-circle d-circle-bg d-circle-1 d-hb"></div>
+                    <div class="d-moon d-moon-aq d-hide-pc"><b></b><i></i>
+                        <div></div>
+                    </div>
+                    <div class="h2 d-ttu d-animate d-fade">{{secondline.title}}
+                    </div>
+                    <div class="h1 d-ttu d-white d-rise d-animate"><br/><span
+                            class="d-blue d-ha d-arr d-arr-pink">epos</span><span
+                            class="d-pink d-hb d-arr d-arr-blue">manas</span></div>
+                    <div class='d-swipe-note d-hide-pc d-cb d-xl'>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="37px"
+                             viewBox="0 0 45.002 30" enable-background="new 0 0 45.002 30" xml:space="preserve"><switch>
+                                    <g i:extraneous="self">
+                                        <g>
+                                            <polygon
+                                                    points="4,20 6.562,20 3.361,16 10,16 10,14 3.361,14 6.562,10 4,10 0,15.001"/>
+                                            <g>
+                                                <path
+                                                        d="M16.002,16c-0.553,0-1-0.448-1-1c0-8.271,6.729-15,15-15s15,6.729,15,14.999c0,0.552-0.449,1-1,1c-0.553,0-1-0.448-1-1 C43.002,7.831,37.17,2,30.002,2s-13,5.831-13,13C17.002,15.552,16.553,16,16.002,16"/>
+                                                <path
+                                                        d="M29.982,19.989c-6.018,0-5.127-7.311-5.127-7.311s1.027-2.315,5.127-2.315c4.102,0,5.17,2.315,5.17,2.315 S35.998,19.989,29.982,19.989 M30.002,8c-6.285,0-8.115,5.679-8.115,19.004v0.6C24.229,29.114,27.008,30,30.002,30 c2.992,0,5.773-0.887,8.113-2.396v-0.6C38.115,13.679,36.285,8,30.002,8"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </switch></svg>
+                    </div>
+                    <div class="d-scroll-wrap">
+                            <div class="d-scroll">
+                                <div class="d-cycle d-ttu d-xs">
+                                    <div class="d-cycle-i d-cycle-a d-animate d-rise-l d-delay-1">
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">информационная<br/>архитектура</i></span>
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">интерактивные<br/>прототипы</i></span>
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i class="d-hover">контент-стратегия</i></span>
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">дизайн</i></span>
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">тестирование<br/>и аналитика</i></span>
+                                        <div class="d-blue d-s d-ttu d-animate d-fade d-delay-2">aic &gt;&gt;</div>
+                                    </div>
+                                    <div class="d-cycle-m d-animate d-fade d-delay-3">
+                                        <div class="d-ha d-hb"></div>
+                                        <div class="d-ha d-hb"></div>
+                                        <div class="d-ha d-hb"></div>
+                                        <div class="d-ha d-hb"></div>
+                                    </div>
+                                    <div class="d-cycle-i d-cycle-q d-animate d-rise-r d-delay-1">
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">техническая<br/>архитектура</i></span>
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">функциональная<br/>спецификация</i></span>
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">front-end</i></span>
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">back-end</i></span>
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i class="d-hover">нi-load<br/>тестирование</i></span>
+                                        <span class="d-hb d-animate d-fade d-delay-2"><i
+                                                class="d-hover">техническая<br/>поддержка</i></span>
+                                        <div class="d-pink d-s d-ttu d-animate d-fade d-delay-2">qsoft &gt;&gt;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-stars d-stars-3"></div>
+    </section>
+
+    <section class="d-section-5 d-ha d-animbox" id="d-section-5">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-5 d-col-xs-12 d-tac d-tal-xs d-animate d-fade">
+                    <div class="h1 d-font2 d-ttu d-white"><span class="d-ha d-arr d-arr-pink">Epos</span><span
+                            class="d-hb d-arr d-arr-blue">Manas</span></div>
+                </div>
+                <div class="d-col d-col-7 d-col-xs-12 d-animate d-fade">
+                    <div class="h1 d-ttu d-white">{{ thirdline.title }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="d-bgd d-bgd-inv d-bgd-4">
+            <div class="d-bgd-4-i d-px-box-m-2"></div>
+        </div>
+        <div class="d-stars d-stars-4"></div>
+    </section>
+
+    <section class="d-section-6 d-dark d-animbox" id="d-section-6" style="display: none">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-moon d-moon-a d-hide-pc"><b></b><i></i>
+                    <div></div>
+                </div>
+                <div class="d-col d-col-12">
+                    <div class="h1 d-ttu d-white d-animate d-rise">Технологии<br/>ведения проектов</div>
+                    <div class="h2 h0 d-ib d-ttu d-animate d-fade d-delay-1">Рабочая группа специалистов на
+                        проекте
+                    </div>
+                    <nav class="d-nav-charts d-nav-tabs d-ib h3 d-ttu d-animate d-fade d-delay-1">
+                        <ul>
+                            <li class="d-current">aic</li>
+                            <li>qsoft</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="d-col d-col-4 d-col-xs-12">
+                    <div class="d-section-descr d-dark d-xl d-animate d-fade">Среднее соотношение<br/>общего и&nbsp;затраченного<br/>времени
+                        на&nbsp;специалистов<br/>на&nbsp;проекте
+                    </div>
+                    <div class="d-counter-a d-animate d-fadein">
+                        <div class="d-count d-font d-counted2" data-count="684">0</div>
+                        <div class="d-count d-fl d-font d-counted2" data-count="1165">0</div>
+                        <div class="d-white d-xl">часов</div>
+                    </div>
+                    <div class="d-counter-q d-animate2 d-fadeout">
+                        <div class="d-count d-font d-counted2" data-count="1385">0</div>
+                        <div class="d-count d-fl d-font d-counted2" data-count="1750">0</div>
+                        <div class="d-white d-xl">часов</div>
+                    </div>
+                </div>
+                <div class="d-ccharts" id="d-ccharts">
+                    <div class="d-cchart d-cchart-a d-animate">
+                        <nav class="d-nav-employees d-tar d-ttu d-xs d-animate d-fade d-delay-1">
+                            <ul>
+                                <li><i class="d-hover">Руководитель проекта</i></li>
+                                <li><i class="d-hover">Аналитик</i></li>
+                                <li><i class="d-hover">Проектировщик</i></li>
+                                <li><i class="d-hover">Арт-директор</i></li>
+                                <li><i class="d-hover">Дизайнер</i></li>
+                            </ul>
+                        </nav>
+                        <div class="d-cchart-i d-cchart-i-0" id="d-cchart-a-0"></div>
+                        <div class="d-cchart-i d-cchart-i-1" id="d-cchart-a-1"></div>
+                        <div class="d-cchart-i d-cchart-i-2" id="d-cchart-a-2"></div>
+                        <div class="d-cchart-i d-cchart-i-3" id="d-cchart-a-3"></div>
+                        <div class="d-cchart-i d-cchart-i-4" id="d-cchart-a-4"></div>
+                        <div class="d-cchart-i d-cchart-i-4" id="d-cchart-a-4"></div>
+                        <div class="d-cchart-i d-cchart-i-0 d-cchart-i-o" id="d-cchart-a-5"></div>
+                        <div class="d-cchart-i d-cchart-i-1 d-cchart-i-o" id="d-cchart-a-6"></div>
+                        <div class="d-cchart-i d-cchart-i-2 d-cchart-i-o" id="d-cchart-a-7"></div>
+                        <div class="d-cchart-i d-cchart-i-3 d-cchart-i-o" id="d-cchart-a-8"></div>
+                        <div class="d-cchart-i d-cchart-i-4 d-cchart-i-o" id="d-cchart-a-9"></div>
+                    </div>
+                    <div class="d-cchart d-cchart-q d-animate">
+                        <nav class="d-nav-employees d-tar d-ttu d-xs d-animate2 d-fade d-delay-1">
+                            <ul>
+                                <li><i class="d-hover">Системный аналитик</i></li>
+                                <li><i class="d-hover">Ведущий программист</i></li>
+                                <li><i class="d-hover">Front-end разработчик</i></li>
+                                <li><i class="d-hover">Тех. Директор</i></li>
+                                <li><i class="d-hover">Системный Архитектор</i></li>
+                            </ul>
+                        </nav>
+                        <div class="d-cchart-i d-cchart-i-0" id="d-cchart-q-0"></div>
+                        <div class="d-cchart-i d-cchart-i-1" id="d-cchart-q-1"></div>
+                        <div class="d-cchart-i d-cchart-i-2" id="d-cchart-q-2"></div>
+                        <div class="d-cchart-i d-cchart-i-3" id="d-cchart-q-3"></div>
+                        <div class="d-cchart-i d-cchart-i-4" id="d-cchart-q-4"></div>
+                        <div class="d-cchart-i d-cchart-i-0 d-cchart-i-o" id="d-cchart-q-5"></div>
+                        <div class="d-cchart-i d-cchart-i-1 d-cchart-i-o" id="d-cchart-q-6"></div>
+                        <div class="d-cchart-i d-cchart-i-2 d-cchart-i-o" id="d-cchart-q-7"></div>
+                        <div class="d-cchart-i d-cchart-i-3 d-cchart-i-o" id="d-cchart-q-8"></div>
+                        <div class="d-cchart-i d-cchart-i-4 d-cchart-i-o" id="d-cchart-q-9"></div>
+                    </div>
+                </div><!-- /d-ccharts -->
+            </div>
+        </div>
+    </section>
+
+    <section class="d-section-7 d-animbox" style="display:none" id="d-section-7">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-12">
+                </div>
+                <div class="d-col d-col-4 d-col-xs-12 d-animate d-fade d-delay-05">
+                    <p class="d-l d-ttu d-white">Выделенные рабочие группы</p>
+                    Для&nbsp;каждого проекта формируется команда специалистов, способных наилучшим образом
+                    обеспечить достижение поставленных целей.
+                </div>
+                <div class="d-col d-col-4 d-col-xs-12 d-animate d-fade d-delay-1">
+                    <p class="d-l d-ttu d-white">Отчетность 24/7</p>
+                    Современные инструменты управления проектами дают доступ к&nbsp;отчетной информации в
+                    круглосуточном режиме.
+                </div>
+                <div class="d-col d-col-4 d-col-xs-12 d-animate d-fade d-delay-15">
+                    <p class="d-l d-ttu d-white">Agile / T&M методологии</p>
+                    Постоянное взаимодействие рабочей группы и&nbsp;команды заказчиков позволяет гибко реагировать
+                    на&nbsp;изменения требований в&nbsp;ходе разработки.
+                </div>
+                <div class="d-col d-col-4 d-hide-xs"></div>
+                <div class="d-col d-col-4 d-col-xs-12 d-animate d-fade d-delay-2">
+                    <p class="d-l d-ttu d-white">Единый проектный офис</p>
+                    Общие для&nbsp;двух компаний стандарты бизнес-процессов обеспечивают эффективность планирования
+                    и&nbsp;качество выполнения проектов.
+                </div>
+                <div class="d-col d-col-4 d-col-xs-12 d-animate d-fade d-delay-25">
+                    <p class="d-l d-ttu d-white">Task tracking</p>
+                    Для управления задачами и&nbsp;организации совместной работы используются инструменты, дающие
+                    контроль за&nbsp;этапами производства.
+                </div>
+                <div class="d-col d-col-8 d-hide-xs"></div>
+                <div class="d-col d-col-4 d-col-xs-12 d-animate d-fade d-delay-3">
+                    <p class="d-l d-ttu d-white">SLA</p>
+                    Высокое качество оказываемых услуг гарантируется в&nbsp;сервисном контракте.
+                </div>
+            </div>
+        </div>
+        <div class="d-bgd d-bgd-5"></div>
+        <div class="d-stars d-stars-5"></div>
+    </section>
+
+    <section class="d-section-8 d-dark d-animbox" id="d-section-8">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-12 d-animate d-fade d-delay-05">
+                    <div class='d-swipe-note d-hide-pc d-cb d-xl'>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="37px"
+                             viewBox="0 0 45.002 30" enable-background="new 0 0 45.002 30" xml:space="preserve"><switch>
+                                    <g i:extraneous="self">
+                                        <g>
+                                            <polygon
+                                                    points="4,20 6.562,20 3.361,16 10,16 10,14 3.361,14 6.562,10 4,10 0,15.001"/>
+                                            <g>
+                                                <path
+                                                        d="M16.002,16c-0.553,0-1-0.448-1-1c0-8.271,6.729-15,15-15s15,6.729,15,14.999c0,0.552-0.449,1-1,1c-0.553,0-1-0.448-1-1 C43.002,7.831,37.17,2,30.002,2s-13,5.831-13,13C17.002,15.552,16.553,16,16.002,16"/>
+                                                <path
+                                                        d="M29.982,19.989c-6.018,0-5.127-7.311-5.127-7.311s1.027-2.315,5.127-2.315c4.102,0,5.17,2.315,5.17,2.315 S35.998,19.989,29.982,19.989 M30.002,8c-6.285,0-8.115,5.679-8.115,19.004v0.6C24.229,29.114,27.008,30,30.002,30 c2.992,0,5.773-0.887,8.113-2.396v-0.6C38.115,13.679,36.285,8,30.002,8"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </switch></svg>
+                    </div>
+                    <div class="d-scroll-wrap">
+                        <div class="d-scroll">
+                            <nav class="d-nav-logos d-nav-tabs h3 d-ttu">
+                                <ul>
+                                    <li class="d-current" data-tab="d-tab-0">Все</li>
+                                        {% for p in category %}
+                                    <li data-tab="d-tab-{{p.id}}">{{ p.title}}</li>
+                                    {% endfor %}
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+                    <div class="d-col d-col-11 d-col-xs-12 d-animate d-fade d-delay-05 d-hide-xs">
+                                                {% for c in category %}
+                        <div style="display: none" class="d-row d-tab-logos d-tab-{{c.id}}">
+                            {% for p in c.category_partners.all %}
+                            <div class="d-col d-col-4"><img data-src="{{p.image.url}}" width="177" height="40" alt="" title="" class="d-hover lazy"/>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+                                        {% endfor %}
+
+                        <div class="d-row d-tab-logos d-tab-0">
+                            {% for p in partners %}
+                            <div class="d-col d-col-4"><img data-src="{{p.image.url}}" width="177" height="40" alt="" title="" class="d-hover lazy"/>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+
+
+
+                    </div>
+
+
+            </div>
+        </div>
+        <div class="d-bgd d-bgd-inv d-bgd-6"></div>
+        <div class="d-bgd d-bgd-7"></div>
+        <div class="d-bgd d-bgd-8"></div>
+    </section>
+    <section class="d-section-9 d-animbox" id="d-section-9">
+        <div class="d-grid">
+            <div class="d-col d-col-12 d-col-xs-12">
+                <div class="h1 d-ttu d-tar d-white d-animate d-rise" style="font-size:50px;">{% trans 'Мнения экспертов рынка' %}</div>
+                <div class='d-swipe-note d-hide-pc d-cb d-xl'>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="37px"
+                         viewBox="0 0 45.002 30" enable-background="new 0 0 45.002 30" xml:space="preserve"><switch>
+                                <g i:extraneous="self">
+                                    <g>
+                                        <polygon
+                                                points="4,20 6.562,20 3.361,16 10,16 10,14 3.361,14 6.562,10 4,10 0,15.001"/>
+                                        <g>
+                                            <path
+                                                    d="M16.002,16c-0.553,0-1-0.448-1-1c0-8.271,6.729-15,15-15s15,6.729,15,14.999c0,0.552-0.449,1-1,1c-0.553,0-1-0.448-1-1 C43.002,7.831,37.17,2,30.002,2s-13,5.831-13,13C17.002,15.552,16.553,16,16.002,16"/>
+                                            <path
+                                                    d="M29.982,19.989c-6.018,0-5.127-7.311-5.127-7.311s1.027-2.315,5.127-2.315c4.102,0,5.17,2.315,5.17,2.315 S35.998,19.989,29.982,19.989 M30.002,8c-6.285,0-8.115,5.679-8.115,19.004v0.6C24.229,29.114,27.008,30,30.002,30 c2.992,0,5.773-0.887,8.113-2.396v-0.6C38.115,13.679,36.285,8,30.002,8"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </switch></svg>
+                </div>
+            </div>
+            <div class="container swiper-container2" style="overflow: hidden">
+                <div class="swiper-wrapper" style="position:relative; z-index:334;">
+                    {% for e in employees %}
+                    <div class="swiper-slide">
+                        <article class="d-animate d-fade">
+                        <div style="border: 1px solid #fff; margin-bottom: 2em;" class="d-person-img">
+                            <img class="lazy" src="{{e.image.url}}" width="100%" alt="12"/>
+                        </div>
+                        <div class="d-person-txt" style="padding: 0 5px">
+                            <p style="margin-bottom: 0.5em;" class="d-l d-white d-ttu">{{ e.name }}<br/><span class="d-blue" style="margin-bottom: 0.5em;">Сотрудник<br/></span>
+                            </p>
+                            {{ e.text}}
+                        </div>
+                    </article>
+                    </div>
+                   {% endfor%}
+                </div>
+               <div style="z-index: 335" class="swiper-button-next swiper-button-white"></div>
+                <div style="z-index: 335" class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        </div>
+        <div class="d-bgd d-bgd-9"></div>
+    </section>
+<!--{% for i in gallery%} url({{i.file.url}}) {% endfor %}-->
+    <section class="d-section-11 d-animbox d-animated" id="d-section-11">
+        <div class="d-grid">
+            <div class="d-row">
+                <div class="d-col d-col-12">
+                    <div class="h1 d-ttu d-white d-animate d-rise">{% trans 'Галерея' %}</div>
+                </div>
+                <div class="d-col d-col-12 video-wrap">
+                    <div class="owl-carousel">
+                        {% for v in content %}
+                        <div class="item">
+                            <a data-fancybox="video-gallery" href="{{v.image.url}}" data-width="940" data-height="560">
+                                <img style="width: 100%; height: auto" src="{{ v.image.url }}" alt="slide-image">
+                            </a>
+                        </div>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-bgd d-bgd-11"></div>
+    </section>
+
+</div><!-- /#d-content -->
+
+</div><!-- /#d-wrap -->
+{% endblock %}

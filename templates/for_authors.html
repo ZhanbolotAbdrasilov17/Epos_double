@@ -1,0 +1,112 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load i18n%}
+{% block page %}
+
+
+    <div id="d-content">
+
+
+        <section class="d-section-8 d-dark d-animbox d-animated" id="d-section-8">
+            <div class="d-grid">
+                <div class="d-row">
+                    <div class="d-col d-col-6 d-col-xs-12">
+                        <div class="h1 d-ttu h0 d-dark2 d-animate d-rise">{% trans 'Ознакомаление для авторов' %}</div>
+                    </div>
+                    <div class="d-col d-col-12 d-animate d-fade d-delay-05">
+                        <div class='d-swipe-note d-hide-pc d-cb d-xl'>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="37px"
+                                 viewBox="0 0 45.002 30" enable-background="new 0 0 45.002 30" xml:space="preserve"><switch>
+                                    <g i:extraneous="self">
+                                        <g>
+                                            <polygon
+                                                points="4,20 6.562,20 3.361,16 10,16 10,14 3.361,14 6.562,10 4,10 0,15.001"/>
+                                            <g>
+                                                <path
+                                                    d="M16.002,16c-0.553,0-1-0.448-1-1c0-8.271,6.729-15,15-15s15,6.729,15,14.999c0,0.552-0.449,1-1,1c-0.553,0-1-0.448-1-1 C43.002,7.831,37.17,2,30.002,2s-13,5.831-13,13C17.002,15.552,16.553,16,16.002,16"/>
+                                                <path
+                                                    d="M29.982,19.989c-6.018,0-5.127-7.311-5.127-7.311s1.027-2.315,5.127-2.315c4.102,0,5.17,2.315,5.17,2.315 S35.998,19.989,29.982,19.989 M30.002,8c-6.285,0-8.115,5.679-8.115,19.004v0.6C24.229,29.114,27.008,30,30.002,30 c2.992,0,5.773-0.887,8.113-2.396v-0.6C38.115,13.679,36.285,8,30.002,8"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </switch></svg>
+                        </div>
+                        <div class="d-scroll-wrap">
+                            <div class="d-scroll">
+                                <nav class="d-nav-logos d-nav-tabs h3 d-ttu">
+                                    <ul>
+                                        <li class="d-current" data-tab="d-tab-0">{% trans 'Подать статью' %}</li>
+                                        <li data-tab="d-tab-1">{% trans 'Руководство для авторов' %}</li>
+                                        <li data-tab="d-tab-2">{% trans 'Процесс рецензирования' %}</li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-col d-col-11 d-col-xs-12 d-animate d-fade d-delay-05 d-hide-xs">
+                        <div class="d-tab-logos d-tab-0">
+                            <h2 class="d-section-title">Подать статью</h2>
+                            <p class="d-section-descr">
+                                Контрольный список подготовки материала к отправке В качестве одного из этапов процесса отправки авторы должны проверить соответствие их материала всем следующим пунктам, материалы могут быть возвращены авторам, если они не соответствуют этим требованиям. Эта статья не была раньше опубликована, а также не представлена для рассмотрения и публикации в другом журнале (иначе объясните это в примечаниях для редактора). Отправляемый материал представлен в формате OpenOffice, Microsoft Word или RTF. Список литературы представлен в двух вариантах (на языке оригинала и в References), оформлен в соответствии с требованиями журнала. Ссылки на электронные публикации содержат все необходимые сведения об источнике. Текст набран с одинарным межстрочным интервалом, шрифт Times New Roman, 14 pt; для выделения используется курсив, а не подчеркивание (за исключением URL-адресов); все иллюстрации, графики и таблицы расположены в соответствующих местах в тексте, а не в конце документа. Текст соответствует стилистическим и библиографческим требованиям, описанным в Руководстве для авторов, и принципам редакционной политики журнала. Комплект материалов содержит оформленный в соответствии с требованиями текст рукописи, заполненную и подписанную заявку на публикацию, иллюстрации, список подписей к иллюстрациям, сведения об авторе/авторов, фотографию автора/авторов.
+                            </p>
+                        </div>
+                        <div class="d-tab-logos d-hidden d-tab-1">
+                            <h2 class="d-section-title">Руководство для авторов</h2>
+                                <p class="d-section-descr">
+                           Порядок приема и подготовки рукописи к публикации
+Журнал круглогодично принимает рукописи на русском и английском языках, оформленные по следующим правилам.
+
+Принимаются к рассмотрению только не публиковавшиеся ранее научные статьи, аналитические обзоры выставок, специализированных конкурсов и форумов, результаты теоретических и прикладных исследований, материалы научно-образовательного характера, соответствующие тематике журнала: теории и истории искусства, архитектуры, дизайна.
+
+Описание рубрик журнала см. в разделе Темы и рубрики.
+                        </p>
+                        </div>
+                        <div class="d-tab-logos d-hidden d-tab-2">
+                            <h2 class="d-section-title">Процесс рецензирования</h2>
+                                <p class="d-section-descr">
+                            Рецензирование является обязательным этапом в оценке статей и принятии решения об их публикации. Все рукописи проходят следующие этапы обработки: На этапе формальной экспертизы выпускающий редактор рассматривает рукопись и оценивает ее соответствие тематике и общим требованиям журнала (наличие сопроводительных документов, необходимых метаданных, корректность оформления рукописи, качество иллюстративного материала). На этом этапе все статьи проверяются на наличие некорректных заимствований и самоцитирования с помощью ресурса Антиплагиат. На этапе содержательной экспертизы все статьи проходят обязательное «двойное слепое» рецензирование (рецензентам не раскрывается имя автора, а автору не сообщаются имена рецензентов). Редактор направляет статью на рецензирование специалистам по профилю исследования. При необходимости редколлегия обращается к сторонним специалистам, обладающим знаниями в соответствующей области.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="d-carousel-logos d-col d-col-12 d-hide-pc">
+                        <div class="d-section-descr d-tab-logos d-tab-0">
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-00.jpg" width="125" height="100" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-sb.jpg" width="128" height="91" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-mtsb.jpg" width="177" height="40" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-trust.jpg" width="166" height="36" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-psb.jpg" width="245" height="40" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-vtb24.jpg" width="146" height="40" alt="" title=""/></div>
+                        </div>
+                        <div class="d-section-descr d-tab-logos d-tab-1">
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-rtk.jpg" width="95" height="82" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-yota.jpg" width="83" height="83" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-mts.jpg" width="117" height="58" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-onlime.jpg" width="126" height="94" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-mastertel.jpg" width="179" height="55" alt="" title=""/></div>
+                        </div>
+                        <div class="d-section-descr d-tab-logos d-tab-2">
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-1c.jpg" width="113" height="57" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-bitrix.jpg" width="128" height="69" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-amo.jpg" width="192" height="38" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-tserv.jpg" width="165" height="52" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-lanit.jpg" width="65" height="83" alt="" title=""/></div>
+                        </div>
+                        <div class="d-section-descr d-tab-logos d-tab-3">
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-eldorado.jpg" width="181" height="38" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-svyaznoy.jpg" width="169" height="39" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-sapato.jpg" width="135" height="70" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-ff.jpg" width="178" height="31" alt="" title=""/></div>
+                            <div class="d-col d-col-xs-6"><img class="lazy" data-src="upload/logo-mts.jpg" width="117" height="58" alt="" title=""/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-bgd d-bgd-8" style="background:#fff"></div>
+        </section>
+
+    </div><!-- /#d-content -->
+
+</div><!-- /#d-wrap -->
+{% endblock %}

@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-08 23:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: myjournal/settings.py:109
+msgid "Russia"
+msgstr ""
+
+#: myjournal/settings.py:110
+msgid "Kyrgyz"
+msgstr ""
+
+#: myjournal/settings.py:111
+msgid "English"
+msgstr ""
+
+#: templates/about_journal.html:40
+#, fuzzy
+#| msgid "Лидер большинства профессиональных рейтингов СМИ Кыргызстана"
+msgid "Лидер большинства профессиональных и рейтингов СМИ Кыргызстана"
+msgstr "Кыргызстандагы ММКлардын кесиптик рейтингдеринин көпчүлүгүнүн лидери"
+
+#: templates/about_journal.html:46 templates/home.html:80
+msgid "Подробнее"
+msgstr "Кененирээк"
+
+#: templates/about_journal.html:51 templates/home.html:85
+msgid "Академия"
+msgstr "Академия"
+
+#: templates/about_journal.html:229 templates/home.html:257
+msgid "максимально эффективное управление статьями"
+msgstr "макаланы мүмкүн болушунча натыйжалуу башкаруу"
+
+#: templates/article_releases.html:170
+msgid "Направления публикаций"
+msgstr "Басылмалардын багыттары"
+
+#: templates/article_releases.html:175 templates/article_releases.html:180
+msgid "часов"
+msgstr "саат"
+
+#: templates/article_releases.html:187
+msgid "Передовая статья"
+msgstr "Өркүндөтүлгөн макала"
+
+#: templates/article_releases.html:188
+msgid "Научная статья"
+msgstr "Илимий макала"
+
+#: templates/article_releases.html:189
+msgid "Информационная статья"
+msgstr "Маалыматтык макала"
+
+#: templates/article_releases.html:190
+msgid "Общеисследовательская статья"
+msgstr "Жалпы изилдөө макаласы"
+
+#: templates/article_releases.html:191
+msgid "Практико-аналитическая статья"
+msgstr "Практикалык-аналитикалык макала"
+
+#: templates/article_releases.html:209
+msgid "Системная информация"
+msgstr "Системалык маалымат"
+
+#: templates/article_releases.html:210
+msgid "Ведущий рынок новостей"
+msgstr "Жаңылыктар рыногун жетектөө"
+
+#: templates/article_releases.html:211
+msgid "Главный повестник"
+msgstr "Башкы күн тартиби"
+
+#: templates/article_releases.html:212
+msgid "Технический апгрейд"
+msgstr "Техникалык жаңыртуу"
+
+#: templates/article_releases.html:213
+msgid "Архитектор познаний"
+msgstr "Билимдин архитектору"
+
+#: templates/for_authors.html:14
+msgid "Ознакомаление для авторов"
+msgstr "Авторлор үчүн таанышуу"
+
+#: templates/for_authors.html:39
+msgid "Подать статью"
+msgstr "Макаланы тапшыруу"
+
+#: templates/for_authors.html:40
+msgid "Руководство для авторов"
+msgstr "Авторлор үчүн колдонмо"
+
+#: templates/for_authors.html:41
+msgid "Процесс рецензирования"
+msgstr "Карап чыгуу процесси"
+
+#: templates/home.html:15
+msgid "Креатив в каждой статье для удовольствия"
+msgstr "Ырахат алуу үчүн ар бир макалада Чыгармачыл"
+
+#: templates/home.html:51
+msgid "аналитика и контроль информации на достоверность"
+msgstr "аналитика жана маалыматтын аныктыгын контролдоо"
+
+#: templates/home.html:55
+msgid "сотрудничество"
+msgstr "кызматташуу"
+
+#: templates/home.html:57
+msgid "заказы статей"
+msgstr "макалалар буйруктары"
+
+#: templates/home.html:59
+msgid "заявки"
+msgstr "сунуштар"
+
+#: templates/home.html:61
+msgid "специальности"
+msgstr "адистиктер"
+
+#: templates/home.html:74
+msgid "Лидер большинства профессиональных рейтингов СМИ Кыргызстана"
+msgstr "Кыргызстандагы ММКлардын кесиптик рейтингдеринин көпчүлүгүнүн лидери"
+
+#: templates/home.html:157
+msgid "гарантия качество статей поддержка и развитие"
+msgstr "кепилдик макалалар сапатын колдоо жана өнүктүрүү"
+
+#: templates/home.html:174
+#, fuzzy
+#| msgid ""
+#| "Лидер в разработке интегрированных и высоконагруженных интернет-решений"
+msgid ""
+"Лидер в&nbsp;разработке интегрированных и высоконагруженных интернет-решений"
+msgstr ""
+"Интеграцияланган жана жогорку жүктөлгөн интернет чечимдерин иштеп чыгууда "
+"Лидер"
+
+#: templates/home.html:180
+msgid "презентация"
+msgstr "презентация"
+
+#: templates/home.html:184
+msgid "портфолио"
+msgstr "портфолиосу"
+
+#: templates/home.html:212
+msgid "сотрудников"
+msgstr "кызматкерлери"
+
+#: templates/home.html:217
+#, fuzzy
+#| msgid "Лучшее в Кыргызстане портфолио крупных статей"
+msgid "Лучшее в&nbsp;Кыргызстане портфолио крупных статей"
+msgstr "Кыргызстандагы ири макалалардын мыкты портфолиосу"
+
+#: templates/home.html:222
+msgid "лет опыта"
+msgstr "тажрыйба жылдары"
+
+#: templates/home.html:227
+#, fuzzy
+#| msgid ""
+#| "Один из опытнейших в&nbsp;Кыргызстане разработчиков корпоративных порталов"
+msgid ""
+"Один из&nbsp;опытнейших в&nbsp;Кыргызстане разработчиков корпоративных "
+"порталов"
+msgstr "Кыргызстандагы корпоративдик порталдарды иштеп чыгуучулардын бири"
+
+#: templates/home.html:232
+msgid "реализованных проектов"
+msgstr "ишке ашырылган долбоорлор"
+
+#: templates/home.html:237
+#, fuzzy
+#| msgid "Входит в Top-10 журналов Кыргызстана"
+msgid "Входит в&nbsp;Top-10 журналов Кыргызстана"
+msgstr "Кыргызстандын 10 журналына кирет"
+
+#: templates/home.html:332
+msgid "Альянс"
+msgstr ""
+
+#: templates/home.html:513
+msgid "Мнения экспертов рынка"
+msgstr "Базар эксперттеринин пикири"
+
+#: templates/home.html:653
+msgid "Галерея"
+msgstr "Галерея"
+
+#: templates/index.html:95
+msgid "Главная"
+msgstr "Башкы"
+
+#: templates/index.html:96
+msgid "О журнале"
+msgstr "Журнал жөнүндө"
+
+#: templates/index.html:97
+msgid "Авторам"
+msgstr "Авторлор"
+
+#: templates/index.html:98
+msgid "Выпуски"
+msgstr "Чыгаруу"
+
+#: templates/index.html:99
+msgid "Новости"
+msgstr "Жанылыктар"
+
+#: templates/index.html:100
+msgid "Контакты"
+msgstr "Байланыш"
+
+#: templates/index.html:140
+msgid "2022. Все права защищены. Дизайнер"
+msgstr "2022. Бардык укуктар корголгон. Дизайнер"
+
+#~ msgid ""
+#~ "Альянс идей и решений Благодаря объединению наш жунрнал выходит на новый "
+#~ "уровень, гарантируя максимально эффективное управление статьями от лучших "
+#~ "специалистов."
+#~ msgstr ""
+#~ "Идеялар альянсы жана менем;биригүүнүн аркасында чечимдер биздин журнал "
+#~ "жаңы деңгээлге көтөрүлүп, мыкты адистердин макалаларын мүмкүн болушунча "
+#~ "натыйжалуу башкарууга кепилдик берет."

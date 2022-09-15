@@ -1,0 +1,48 @@
+{% extends 'index.html' %} {% load static %} {% block page %}
+
+<section
+        class="d-section-10 d-animbox d-animated"
+        id="d-section-10"
+        style="margin-top: 70px"
+>
+    <div class="d-grid">
+        <div class="d-row">
+            <div class="d-col d-col-12">
+                <div class="h1 d-ttu d-white d-rise d-animate">
+                    Готовы к&nbsp;сотрудничеству?<br/>Напишите нам
+                </div>
+            </div>
+                    {% include 'send_mail.html' %}
+            <div class="d-col d-col-12">
+                <div
+                        class="d-grid d-white d-l"
+                        style="display: flex; justify-content: space-between; flex-wrap: wrap"
+                >
+                    <article>
+            <span class="cpy-text"
+            >г. Бишкек, ул. Разакова 8/1,8/2
+              <br/>
+              720040, Кыргызская Республика
+            </span>
+                    </article>
+                    <article>
+            <span class="cpy-text">
+              <a href="tel:+996312301020"> Приёмная: +996 (312) 30-10-20 </a>
+              <br/>
+              <a href="tel:+996312301020"> Факс: +996 (312) 30-10-20 </a>
+            </span>
+                    </article>
+                    <article>
+            <span class="cpy-text">
+              <a href="mail:mnsait.acad@gmail.com" class="font-weight-500"
+              >mnsait.acad@gmail.com</a
+              ></span
+            >
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
